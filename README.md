@@ -13,7 +13,7 @@ search for "Webhooks" -> "Make a web request"
 and paste your webhook url at "URL"
 as "Method" select "POST"
 and as "Content Type" select "application/json"
-the "Body" should be { "username":"New Blogpost is out!", "content":"<<<{{Value}}>>>"} you can also choose a other username
+the "Body" should be ```{ "username":"New Blogpost is out!", "content":"<<<{{Value}}>>>"}``` you can also choose a other username
 
 ```
 =IMPORTXML("https://hytale.com/news","//*[@class=""post__details__heading""]//text()") & "
