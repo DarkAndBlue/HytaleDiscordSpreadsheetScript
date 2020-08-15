@@ -14,7 +14,7 @@ and paste your webhook url at "URL"
 as "Method" select "POST"
 and as "Content Type" select "application/json"
 the "Body" should be ```{ "username":"New Blogpost is out!", "content":"<<<{{Value}}>>>"}``` you can also choose a other username
-
+then create your action and enable it and you are ready to recieve webhooks about hytale blogposts
 ```
 =IMPORTXML("https://hytale.com/news","//*[@class=""post__details__heading""]//text()") & "
 " & IMPORTXML("https://hytale.com/news","//*[@class=""post__details__body""]//text()") & "
