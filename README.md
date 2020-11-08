@@ -1,5 +1,5 @@
 # HytaleSpreadsheetScript
-A Hytale Spreadsheet Script which can be used over Google spreadshet and can be used over IFTTT to trigger Webhooks.
+A Hytale Spreadsheet Script which can be used over Google spreadsheet and can be used over IFTTT to trigger Webhooks.
 The script loads the information from the hytale website and you can check with IFTTT if a cell has been changed and automatically send a Webhook.
 
 To create a Activity in IFTTT create a account and press "Create"
@@ -26,7 +26,7 @@ and as "Content Type" select "application/json"
 
 the "Body" should be ```{ "username":"New Blogpost is out!", "content":"<<<{{Value}}>>>"}``` you can also choose a other username
 
-then create your action and enable it and you are ready to recieve webhooks about hytale blogposts
+then create your action and enable it and you are ready to receive webhooks about hytale blogposts
 
 ```
 =IMPORTXML("https://hytale.com/news","//*[@class=""post__details__heading""]//text()") & "
